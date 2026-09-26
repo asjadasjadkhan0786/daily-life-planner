@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/daily-routine/"
+title = "Daily Routine"
+description = "A calm local-first mobile planner for daily routines, habits, sleep, running, notes, goals, reviews, and reminders."
+version = "1.0.0"
+id = "artifacts/daily-routine"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/daily-routine/" ]
+localPort = 19229
+
+[services.development]
+run = "pnpm --filter @workspace/daily-routine run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/daily-routine", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/daily-routine", "run", "serve" ]
+
+[services.env]
+PORT = "19229"
+BASE_PATH = "/daily-routine/"
