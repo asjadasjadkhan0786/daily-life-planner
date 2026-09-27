@@ -7,11 +7,36 @@
     "icon": "./assets/images/icon.png",
     "scheme": "daily-routine",
     "userInterfaceStyle": "automatic",
-    "splash": { "image": "./assets/images/icon.png", "resizeMode": "contain", "backgroundColor": "#F5FBF7" },
-    "ios": { "supportsTablet": false },
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5FBF7"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
     "android": {},
-    "web": { "favicon": "./assets/images/icon.png" },
-    "plugins": ["expo-router", ["expo-notifications", { "icon": "./assets/images/icon.png", "color": "#3E8D6B" }]],
-    "experiments": { "typedRoutes": true, "reactCompiler": true }
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#3E8D6B"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85b6c593-8d04-4c06-87cd-3b8f44f96fad"
+      }
+    }
   }
 }
