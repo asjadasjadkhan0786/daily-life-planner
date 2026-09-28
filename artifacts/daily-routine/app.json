@@ -15,7 +15,9 @@
     "ios": {
       "supportsTablet": false
     },
-    "android": {},
+    "android": {
+      "package": "com.asjadkhan0786.dailyroutine"
+    },
     "web": {
       "favicon": "./assets/images/icon.png"
     },
