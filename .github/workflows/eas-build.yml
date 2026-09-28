@@ -1,4 +1,4 @@
-name: Android APK Build
+name: name: Android APK Build
 
 on:
   workflow_dispatch:
@@ -27,6 +27,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Check Expo config
+        run: npx expo config --json
 
       - name: Install EAS CLI
         run: npm install --global eas-cli
